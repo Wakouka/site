@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wakouka | フリーランス看護師の健康セミナー</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-pink: #FFF5F5;
+            --accent-pink: #FFDADA;
+            --text-brown: #8E6E6E;
+            --strong-brown: #5D4646;
+        }
+        body {
+            font-family: 'Noto Serif JP', serif;
+            color: var(--text-brown);
+            background-color: var(--primary-pink);
+            line-height: 1.8;
+            word-break: break-all;
+        }
+        .handwriting {
+            font-family: 'Zen Maru Gothic', sans-serif;
+            font-weight: 700;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(255, 245, 245, 0.8), rgba(255, 245, 245, 0.8)), 
+                        url('https://images.unsplash.com/photo-1576091160550-2173dad99d11?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(142, 110, 110, 0.1);
+        }
+        .btn-line {
+            background-color: #06C755;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-line:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background-color: var(--accent-pink);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. ファーストビュー (MV) -->
+    <header class="hero-bg min-h-screen flex items-center justify-center text-center px-4 relative overflow-hidden">
+        <div class="max-w-4xl">
+            <div class="mb-6 inline-block bg-white/60 px-4 py-1 rounded-full text-sm tracking-widest">
+                Freelance Nurse "Wakouka"
+            </div>
+            <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight text-strong-brown">
+                病気になる前に、<br>
+                知っておきたいことがある。
+            </h1>
+            <p class="text-lg md:text-xl mb-10 text-text-brown">
+                看護師の経験を、あなたの日常の安心に。<br>
+                難しい医療を、一番やさしい言葉で伝える健康セミナー。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://lin.ee/qpADfcX" target="_blank" rel="noopener noreferrer" class="btn-line px-10 py-4 rounded-full font-bold text-lg shadow-lg text-center">
+                    LINEで相談・お申し込み
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Problem：共感・問題提起 -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="section-title text-2xl md:text-3xl font-bold mb-12 text-strong-brown">こんな不安や悩み、抱えていませんか？</h2>
+            <div class="space-y-6 text-left mb-12">
+                <div class="flex items-start gap-4 p-4 border-b border-pink-100">
+                    <span class="text-accent-pink text-2xl">●</span>
+                    <p>テレビやネットの健康情報は、どれを信じていいかわからない…</p>
+                </div>
+                <div class="flex items-start gap-4 p-4 border-b border-pink-100">
+                    <span class="text-accent-pink text-2xl">●</span>
+                    <p>病院に行くほどではないけれど、最近なんとなく体調が悪い・・・</p>
+                </div>
+                <div class="flex items-start gap-4 p-4 border-b border-pink-100">
+                    <span class="text-accent-pink text-2xl">●</span>
+                    <p>お医者さんの話は難しくて、つい聞き流してしまう…</p>
+                </div>
+                <div class="flex items-start gap-4 p-4 border-b border-pink-100">
+                    <span class="text-accent-pink text-2xl">●</span>
+                    <p>いつまでも元気でいたいけれど、具体的に何をすればいい？</p>
+                </div>
+            </div>
+            <p class="text-lg handwriting italic text-strong-brown">
+                「私たちにとって一番大切な『健康』。でも、病気になってから後悔する方が多いのが現状です。」
+            </p>
+        </div>
+    </section>
+
+    <!-- 7. 申し込み・お問い合わせ -->
+    <section id="contact" class="py-20 px-4 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="section-title text-2xl md:text-3xl font-bold mb-12 text-strong-brown">まずはお気軽にご相談ください</h2>
+            <div class="space-y-6 mb-12">
+                <a href="https://lin.ee/qpADfcX" target="_blank" rel="noopener noreferrer" class="btn-line w-full block py-5 rounded-xl font-bold text-xl shadow-md text-center">
+                    LINEで相談・お申し込み
+                </a>
+                <p class="text-sm">「友だち追加」で最新のセミナー情報をお届けします。</p>
+                
+                <div class="pt-10">
+                    <p class="text-sm font-bold mb-3 text-strong-brown tracking-widest uppercase">Mail お問い合わせ</p>
+                    <p class="text-xl md:text-2xl font-medium border-b border-pink-200 inline-block pb-1">wakouka.info@gmail.com</p>
+                    <p class="text-xs text-gray-500 mt-4 leading-relaxed">
+                        お仕事のご依頼や個別のお問い合わせは<br class="md:hidden">上記メールアドレスまでお願いいたします
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-xs text-gray-400 border-t border-pink-100">
+        &copy; 2024 Wakouka All Rights Reserved.
+    </footer>
+
+</body>
+</html>
